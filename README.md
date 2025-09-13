@@ -1,20 +1,13 @@
-#####################################################
-환경 설정
-python -m venv venv
-source venv/bin/activate
-# Windows: venv\Scripts\activate
+# Nebula – A Serverless Internet Rebuilt from Scratch
+
+- Zero dependencies on HTTP/DNS/IPFS/libp2p
+- Pure-Python implementation
+- `nb://` protocol + NebulaML + DHT + GUI browser
+- Clone & `python run.py` → you are on the new internet.
+
+## Quick start
+```bash
+git clone https://github.com/yourname/nebula.git
+cd nebula
 pip install -e .
-#####################################################
-nebula/
-├── nebula/
-│   ├── __init__.py
-│   ├── protocol.py          # nb:// 프로토콜 구현
-│   ├── markup.py            # NebulaML 파서
-│   ├── dht.py               # Kademlia 기반 DHT
-│   ├── browser.py           # Tkinter GUI 브라우저
-│   └── node.py              # full-node 실행기
-├── apps/
-│   └── welcome.neb          # 샘플 페이지
-├── README.md
-├── pyproject.toml           # pip install -e .  지원
-└── run.py                   # python run.py  한 방에 실행
+python run.py
